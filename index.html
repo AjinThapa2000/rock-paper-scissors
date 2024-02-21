@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+</head>
+<body>
+  <h1> Lets Play GAME</h1>
+  <h2>Follow these steps: </h2>
+  <ol>
+    <li>Open Google Chrome and navigate to the page where the game is hosted (e.g., <code>http://localhost:4001</code>).</li>
+    <li>Open the Developer Tools by right-clicking anywhere on the page and selecting "Inspect" or by pressing Ctrl + Shift + I (or Cmd + Option + I on macOS).</li>
+    <li>In the Developer Tools window, navigate to the "Network" tab.</li>
+    <li>With the Network tab open, make sure the "Preserve log" option is checked. This ensures that network requests are not cleared when you navigate to a new page.</li>
+    <li>Now, you're ready to send a POST request to the server. Follow these steps:
+      <ol>
+        <li>Click on the "Console" tab within the Developer Tools.</li>
+        <li>Type the following JavaScript code in the console to send a POST request:</li>
+      </ol>
+    </li>
+  </ol>
+  <p>fetch('http://localhost:4001', {</p>
+  <p>method: 'POST',</p>
+   <p> body: 'rock'</p>
+  <p>})</p>
+  <p>.then(response => response.text())</p>
+  <p>.then(console.log)</p>
+  <p>.catch(console.error);</p>
+  
+</body>
+</html>
